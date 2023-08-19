@@ -1,8 +1,25 @@
-# React + Vite
+# React + Vite + Redux Toolkit + Saga
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is this?
 
-Currently, two official plugins are available:
+Redux Toolkit is well known state management library.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The asynchronous code like API calls must be in REDUX handled by special middleware.
+
+Redux Thunk is the default middleware.
+
+The React Saga is another way to write async code in Redux.
+
+## Minimal working example 
+
+Start development server for API (from db.json)
+
+```
+yarn json-server db.json
+```
+
+Start vite project
+
+```
+yarn dev
+```
